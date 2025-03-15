@@ -1,4 +1,80 @@
-".vs/" 
-"bin/" 
-"obj/" 
-"Properties/" 
+# Global Ignore (Applies to Both API and Frontend)
+
+# Misc
+*.swp
+*.*~
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+msbuild.log
+msbuild.err
+msbuild.wrn
+.vs/
+
+# ========================
+# Backend (API) Ignore Rules
+# ========================
+
+api/project.lock.json
+api/nupkg/
+api/bin/
+api/obj/
+api/Properties/
+
+# Visual Studio Code
+api/.vscode/
+
+# Rider
+api/.idea/
+
+# Visual Studio
+api/.vs/
+
+# Fleet
+api/.fleet/
+
+# Code Rush
+api/.cr/
+
+# User-specific files
+api/*.suo
+api/*.user
+api/*.userosscache
+api/*.sln.docstates
+
+# Build results
+api/[Dd]ebug/
+api/[Dd]ebugPublic/
+api/[Rr]elease/
+api/[Rr]eleases/
+api/x64/
+api/x86/
+api/build/
+api/bld/
+api/[Bb]in/
+api/[Oo]bj/
+api/[Oo]ut/
+
+# ========================
+# Frontend Ignore Rules
+# ========================
+
+# Dependencies
+frontend/node_modules
+frontend/.pnp
+frontend/.pnp.js
+
+# Testing
+frontend/coverage
+
+# Production
+frontend/build
+
+# Environment Variables
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
